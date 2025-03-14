@@ -1,0 +1,86 @@
+---
+import Hero from "@libs/ui/blocks/Hero/Hero";
+import Layout from "layouts/Layout.astro";
+import Slider from "@libs/ui/components/Slider.astro";
+---
+
+<Layout
+  title="Ernesto Escobar"
+  description="I'm a software engineer with a passion for building scalable and efficient systems. I'm currently working as a software engineer at Google."
+>
+  <main
+    class="bg-background d-flex flex-column align-items-center justify-content-center"
+  >
+    <Hero
+      name="Ernesto Escobar"
+      biography="Web developer with over 7 years of experience, specializing in JavaScript as the primary technology stack. Over time, I have optimized processes through automation, created custom landing pages, and managed clients' web platforms. My approach is based on writing clean and efficient code, driven by a deep passion for technology and innovation. I am constantly seeking new professional challenges, working in collaboration with dynamic and high-performance teams to deliver exceptional user experiences and solutions that make a difference."
+      skills={["React", "Node.js", "Typescript", "Astro.js", "Tailwind CSS"]}
+      socialLinks={[
+        {
+          href: "https://github.com/eeem77",
+          icon: "github",
+          label: "GitHub",
+        },
+        {
+          href: "https://www.linkedin.com/in/eeem77/",
+          icon: "linkedin",
+          label: "LinkedIn",
+        },
+        {
+          href: "https://x.com/eeem77",
+          icon: "twitter",
+          label: "Twitter",
+        },
+        {
+          href: "mailto:escobarmernestoe@email.com",
+          icon: "mail",
+          label: "Email",
+        },
+        // {
+        //   href: "/",
+        //   icon: "external-link",
+        //   label: "Portfolio",
+        // },
+      ]}
+      stats={[
+        { title: "Projects Done", value: 11, suffix: "+" },
+        { title: "Years of Experience", value: 7, suffix: "+" },
+        { title: "Worldwide Clients", value: 3, suffix: "+" },
+      ]}
+      image={{
+        src: "/src/static/images/back.png",
+        alt: "Profile Photo",
+      }}
+      client:load
+    />
+
+    <div class="sub-title">
+      <h2 class="text-slate-300">Some Projects</h2>
+    </div>
+    <Slider />
+  </main>
+
+  <style is:global>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</Layout>
+<!-- <script>
+  import Swiper from "swiper";
+  const swiper = new Swiper(".swiper", {
+    effect: "flip",
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script> -->
