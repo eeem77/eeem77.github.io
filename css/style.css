@@ -35,7 +35,7 @@ body {
 
 section {
     opacity: 0;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 /* Header Styles */
@@ -47,6 +47,7 @@ header {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    margin-bottom: 25px;
 }
 
 header::before {

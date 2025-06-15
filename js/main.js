@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Animaciones de entragsap.utils.toArray("section").forEach((section, index) => {da para secciones
+  // Animaciones de secciones al hacer scroll
   gsap.utils.toArray(".content-container").forEach((section, index) => {
     gsap.to(section, {
       scrollTrigger: {
